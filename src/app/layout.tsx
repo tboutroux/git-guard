@@ -13,20 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GitGuard - Repository Vulnerability Scanner",
-  description: "Scan public GitHub repositories for security vulnerabilities, exposed secrets, and unsafe code patterns.",
+  title: "GitGuard — Repository Security Scanner",
+  description:
+    "Scan any public GitHub repository for exposed secrets, unsafe code patterns, and known CVEs — with live results, a security grade, and AI-assisted code review.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="dark">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}>
         {children}
       </body>
     </html>

@@ -1,9 +1,5 @@
-import RepoScanner from "@/components/RepoScanner";
+import Scanner from "@/components/Scanner";
 
 export default function Home() {
-  return (
-    <main>
-      <RepoScanner />
-    </main>
-  );
+  return <Scanner />;
 }
